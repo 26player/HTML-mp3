@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML5 Audio Player</title>
+		<link rel="stylesheet" href="css/style.css" media="screen">
+	</head>
+	<body>
+	<div id="container">
+			<div id="audio-image">
+				<img src="D:\My Files\_HTML&CSS\HTML-mp3\img\cover1.jpg"width="515" height="100">		
+			</div>
+			<div id="audio-player">
+			<div id="audio-info">
+				<span class="artist"></span><span class="title"></span>
+			</div>
+			<br>
+			<input id="volume" type="range" min="0" max="10" value="8">			
+			<img src="D:\My Files\_HTML&CSS\HTML-mp3\img\volum.png">
+			<br>
+			<div id="audio-buttons">
+			<span>
+				<button id="prev"></button>
+				<button id="play"></button>
+				<button id="stop"></button>
+				<button id="pause"></button>
+				<button id="next"></button>
+			</span>
+			</div>
+			<div class="clearfixix"></div>
+			<div id="traker">
+				<div id="progressBar">
+					<span id="progress"></span>
+				</div>
+					<span id="duration"></span>
+			</div>
+			<div class="clearfix"></div>
+			<form autocomplete="off">
+				<div class="autocomplete" style="width:500px;">
+				  <input id="mySearch" type="text" name="mySongs" placeholder="Search for song...">
+				</div>
+			</form>
+			<ul id="playlist" class="hidden">	
+				<li song="Saint Jhn - Albino Blue.mp3" artist="Saint Jhn">Saint Jhn - Albino Blue</li>		
+				<li song="Kurious Ft MF Grimm - Baby Bust It.mp3" artist="Kurious">Kurious Ft MF Grimm - Baby Bust It</li>
+				<li song="Gavinco - Aloe.mp3" artist="Gavinco">Gavinco - Aloe</li>
+				<li song="Mark Battles - Here We Go Again.mp3" artist="Mark Battles">Mark Battles - Here We Go Againli</li>
+				<li song="Doja Cat - All Nighter.mp3" artist="Doja Cat">Doja Cat - All Nighter</li>
+				<li song="Wu-Tang - Lesson Learn'd.mp3" artist="Wu-Tang">Wu-Tang - Lesson Learn'd</li>
+				<li song="Audio Push - Pump Fake.mp3" artist="Audio Push">Audio Push - Pump Fake</li>
+				<li song="Verb T - Everything That You Love.mp3" artist="Verb T">Verb T - Everything That You Love</li>
+				<li song="Post Malone - Rockstar.mp3" artist="Post Malone">Post Malone - Rockstar</li>
+				<li song="Migos - Narcos.mp3" artist="Migos">Migos - Narcos</li>
+				<li song="The Mouse Outfit - What'd I do.mp3" artist="The Mouse Outfit">The Mouse Outfit - What'd I do</li>
+				<li song="Arsonists feat. Vinnie Paz - Tough Guy.mp3" artist="Arsonists feat. Vinnie Paz">Arsonists feat. Vinnie Paz - Tough Guy</li>
+				<li song="Berner - Gettin' it.mp3" artist="Berner">Berner - Gettin' it</li>
+				<li song="Mitza - Nemultumitza.mp3" artist="Mitza">Mitza - Nemultumitza</li>
+				<li song="Yellow Claw - Villain.mp3" artist="Yellow Claw">Yellow Claw - Villain</li>
+				<li song="Calin Pop - Latiffa.mp3" artist="Calin Pop">Calin Pop - Latiffa</li>
+				<li song="Shahmen - Poison.mp3" artist="Shahmen">Shahmen - Poison</li>
+				<li song="ScHoolboy Q - JoHn Muir.mp3" artist="ScHoolboy Q">ScHoolboy Q - JoHn Muir</li>
+				<li song="Mother - Lissie.mp3" artist="Mother">Mother - Lissie</li>
+				<li song="PULCINO PIO - Puiul Piu.mp3" artist="PULCINO PIO">PULCINO PIO - Puiul Piu</li>
+				<li song="Samurai - Blestemul unui geniu.mp3" artist="Samurai">Samurai - Blestemul unui geniu</li>
+				<!--<li song="" artist="">_song name_</li>-->
+			</ul>
+		</div>
+	</div>
+	<h1 align="center">
+				<label for="where">Created by Răzvan Baş</label><br>
+				<a target=_black href="https://www.instagram.com/razvi.b/">
+				<img src="D:\My Files\_HTML&CSS\HTML-mp3\img\_instagram.png" width="20" height="20" alt="instagram">				
+				<a target=_black href="https://www.facebook.com/RazvanBas">
+				<img src="D:\My Files\_HTML&CSS\HTML-mp3\img\_facebook.png" width="20" height="20" alt="facebook">
+				<a target=_black href="mailto:razvan_x50@yahoo.com">
+				<img src="D:\My Files\_HTML&CSS\HTML-mp3\img\\_yahoo.png" width="20" height="20" alt="yahoo">
+				<a target=_black href="mailto:razvan.x50@gmail.com">
+				<img src="D:\My Files\_HTML&CSS\HTML-mp3\img\_gmail.png" width="20" height="20" alt="gmail">
+				<a target=_black href="https://steamcommunity.com/profiles/76561198100865081/">
+				<img src="D:\My Files\_HTML&CSS\powerby\steam.png" width="20" height="20" alt="steam">
+	</h1>
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
