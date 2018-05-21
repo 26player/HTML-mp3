@@ -66,7 +66,16 @@ function nextSong() {
 }
 
 //Next Button
-$('#next').click(nextSong());
+$('#next').click(function () {
+	audio.pause();
+	var next = $('#playlist li.active').next();
+	if (next.length == 0) {
+	 	next = $('#playlist li:last-child');
+	}
+	initAudio(next);
+	audio.play();
+	showDuration();
+});
 
 //Prev Button
 $('#prev').click(function () {
