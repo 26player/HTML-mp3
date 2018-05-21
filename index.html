@@ -2,7 +2,12 @@
 <html>
 	<head>
 		<title>HTML5 Audio Player</title>
-		<link rel="stylesheet" href="css/style.css" media="screen">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css" media="screen">		
 	</head>
 	<body>
 	<div id="container">
@@ -27,12 +32,8 @@
 			</span>
 			</div>
 			<div class="clearfixix"></div>
-			<div id="traker">
-				<div id="progressBar">
-					<span id="progress"></span>
-				</div>
-					<span id="duration"></span>
-			</div>
+			<progress id="seekBar" min="0" value="0" max="100"></progress>
+			<span id="duration">0:00</span>
 			<div class="clearfix"></div>
 			<form autocomplete="off">
 				<div class="autocomplete" style="width:500px;">
@@ -67,16 +68,27 @@
 	</div>
 	<h1 align="center">
 				<label for="where">Created by Răzvan Baş</label><br>
-				<a target=_black href="https://www.instagram.com/razvi.b/">
-				<img src="./img/_instagram.png" width="20" height="20" alt="instagram">				
-				<a target=_black href="https://www.facebook.com/RazvanBas">
+				<a target="_blank" href="https://www.instagram.com/razvi.b/">
+				<img src="./img/_instagram.png" width="20" height="20" alt="instagram">	
+				</a>			
+				<a target="_blank" href="https://www.facebook.com/RazvanBas">
 				<img src="./img/_facebook.png" width="20" height="20" alt="facebook">
-				<a target=_black href="mailto:razvan_x50@yahoo.com">
+				</a>
+				<a target="_blank" href="mailto:razvan_x50@yahoo.com">
 				<img src="./img/_yahoo.png" width="20" height="20" alt="yahoo">
-				<a target=_black href="mailto:razvan.x50@gmail.com">
+				</a>
+				<a target="_blank" href="mailto:razvan.x50@gmail.com">
 				<img src="./img/_gmail.png" width="20" height="20" alt="gmail">
-				<a target=_black href="https://steamcommunity.com/profiles/76561198100865081/">
+				</a>
+				<a target="_blank" href="https://steamcommunity.com/profiles/76561198100865081/">
 				<img src="./img/_steam.png" width="20" height="20" alt="steam">
+				</a>
+				<!--
+				<a target="_blank" href="https://www.instagram.com/razvi.b/">
+					<i class="fab fa-instagram"></i>
+				</a>
+				-->
+				
 	</h1>
 		<script src="js/jquery.js"></script>
 		<script src="js/main.js"></script>
